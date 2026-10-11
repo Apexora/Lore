@@ -510,6 +510,7 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script type="module" src="js/apexora.js"></script>
 <script>
 (function () {
   var shell = document.querySelector('.home-shell');
@@ -569,9 +570,5 @@
 </script>
 <script src="js/search-data.js"></script>
 <script src="js/search.js"></script>
-<script type="module">
-import { onSesion, registrarVisita } from "https://apexora.github.io/Portal/apexora-core.js";
-onSesion((u) => { if (u?.email?.endsWith("@apexora-sala.app")) registrarVisita(); });
-</script>
 </body>
 </html>
