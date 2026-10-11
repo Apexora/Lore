@@ -1,0 +1,22 @@
+/* Lore · "tierra y salvia": corteza + arena, salvia como acento. Se carga después de style.css */
+:root[data-mood="lore"] {
+  --bg: #1d120d; --bg-elev: #2a1a14; --bg-elev-2: #351b16;
+  --gold: #e3b488; --gold-soft: #f1cfae; --umbra: #b64e6f; --umbra-soft: #d56e6f;
+  --ink: #f6ebdc; --ink-dim: #cdbba3; --ink-faint: #ab9a82;
+  --line: rgba(227,180,136,.16); --line-strong: rgba(227,180,136,.30);
+  --f-display: var(--apx-display); --f-deco: var(--apx-display); --f-body: var(--apx-body);
+  font-synthesis: none;
+}
+:root[data-mood="lore"] body { font-size: 1.06rem; line-height: 1.72; }
+:root[data-mood="lore"] h1, :root[data-mood="lore"] h2, :root[data-mood="lore"] h3 { font-weight: 400; letter-spacing: .02em; }
+:root[data-mood="lore"] .nav { background: rgba(29,18,13,.72); }
+:root[data-mood="lore"] .nav-logo { letter-spacing: .08em; }
+:root[data-mood="lore"] .hero {
+  background-image: linear-gradient(180deg, rgba(53,27,22,.30) 0%, rgba(66,35,67,.62) 58%, rgba(29,18,13,.97) 100%), url('../assets/hero-landscape.jpg');
+}
+:root[data-mood="lore"] .hero h1 { text-shadow: 0 0 50px rgba(227,180,136,.35); }
+:root[data-mood="lore"] .hero .tagline { color: #a9c4a7; letter-spacing: .28em; text-transform: uppercase; font: 500 .85rem/1.4 var(--apx-body); }
+:root[data-mood="lore"] .btn { font-family: var(--apx-body); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .8rem; }
+:root[data-mood="lore"] .btn-primary { background: linear-gradient(180deg, #f1cfae, #e3b488); color: #351b16; }
+:root[data-mood="lore"] .btn-ghost:hover { border-color: #a9c4a7; color: #a9c4a7; }
+:root[data-mood="lore"] ::selection { background: #759773; color: #1d120d; }
