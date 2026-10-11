@@ -20,3 +20,4 @@
 :root[data-mood="lore"] .btn-primary { background: linear-gradient(180deg, #f1cfae, #e3b488); color: #351b16; }
 :root[data-mood="lore"] .btn-ghost:hover { border-color: #a9c4a7; color: #a9c4a7; }
 :root[data-mood="lore"] ::selection { background: #759773; color: #1d120d; }
+:root[data-mood="lore"] { --apx-hud-top: auto; --apx-hud-bottom: calc(16px + env(safe-area-inset-bottom,0px)); }
