@@ -105,6 +105,13 @@ const APEXORA_SEARCH_INDEX = [
   { title: "Sombras del pasado, dudas en la luz", category: "Historia", page: "historias.html", anchor: "sombras-luz", sub: "Andreas Light y Rose" },
   { title: "Campañas y Arcos", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Índice de campañas: Guardianes de Apexora y Sinfalía" },
   { title: "Campamento Sopharum", category: "Historia", page: "historias.html", anchor: "campamento-sopharum", sub: "Obra escrita — \"Campamento, familia\"" },
+  { title: "Umbra (arco)", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — año 1011, mes 6" },
+  { title: "Tribus Skaldrak (arco)", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — año 1011, mes 8" },
+  { title: "Luminarae (arco)", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — año 1011, mes 7" },
+  { title: "Boro (arco)", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — año 1011, mes 8" },
+  { title: "Luxor (arco)", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — año 1011, mes 8" },
+  { title: "Lumis (arco)", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — año 1011, mes 9" },
+  { title: "Bahía Lunar", category: "Historia", page: "historias.html", anchor: "campanas", sub: "Campañas y Arcos — Sinfalía, año 1012, mes 7" },
   { title: "Torneo de los Dos Emperadores", category: "Historia", page: "historias.html", anchor: "torneo-emperadores", sub: "Torneo Skaldrak Vlarim (TSV) — final de la campaña" },
 
   // --- Cronología ---
