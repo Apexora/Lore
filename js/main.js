@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Imágenes que no existen o no cargan: se ocultan para no mostrar íconos rotos.
+  document.querySelectorAll("img").forEach((img) => {
+    const hide = () => img.classList.add("img-missing");
+    img.addEventListener("error", hide);
+    if (img.complete && img.naturalWidth === 0) hide();
+  });
+
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
   if (toggle && links) {

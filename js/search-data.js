@@ -14,7 +14,7 @@ const APEXORA_SEARCH_INDEX = [
   { title: "Línea de Tiempo", category: "Página", page: "linea-tiempo.html", anchor: "", sub: "Eventos clave, año 0 al 1012" },
   { title: "Personajes", category: "Página", page: "personajes.html", anchor: "", sub: "PJ y PNJ por nación" },
   { title: "Historias", category: "Página", page: "historias.html", anchor: "", sub: "Relatos y campañas" },
-  { title: "Tirar Dados", category: "Página", page: "dados.html", anchor: "", sub: "Tirador de dados estilo D&D" },
+  { title: "Escritos de la comunidad", category: "Página", page: "escritos.html", anchor: "", sub: "Historias, sesiones y teorías escritas por los jugadores" },
 
   // --- Mitología: Espacio y los diez hijos ---
   { title: "Espacio", category: "Deidad", page: "mitologia.html", anchor: "espacio", sub: "El Padre Primordial" },

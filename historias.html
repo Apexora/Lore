@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Historias — Apexora</title>
-<meta name="description" content="Los relatos de Apexora: Destinos Entrelazados y las Crónicas de los Guardianes de Apexora.">
+<meta name="description" content="Los relatos de Apexora: traiciones, torneos, juicios absurdos y una familia armada a la fuerza. Elegí por dónde empezar.">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="stylesheet" href="css/style.css">
 <script>try{var k='apx-arr:lore';if(sessionStorage.getItem(k))document.documentElement.classList.add('apx-seen');else sessionStorage.setItem(k,1)}catch(e){}</script>
@@ -32,7 +32,7 @@
       <li><a href="linea-tiempo.html">Cronología</a></li>
       <li><a href="personajes.html">Personajes</a></li>
       <li><a href="historias.html" class="active">Historias</a></li>
-      <li><a href="dados.html">Dados</a></li>
+      <li><a href="escritos.html">Escritos</a></li>
     </ul>
   </div>
 </nav>
@@ -55,82 +55,84 @@
   <div class="wrap">
     <p class="eyebrow">Relatos</p>
     <h1>Historias</h1>
-    <p class="prose" style="margin-top:1.25rem;color:var(--ink-dim);font-size:1.15rem;">Los eventos que dieron origen a los Guardianes de Apexora, narrados como sucedieron.</p>
-    <nav class="toc" aria-label="Contenido de la página">
-      <a href="#campanas">Campañas y Arcos</a>
-      <a href="#linaje-zarick">El Linaje de Zarick</a>
-      <a href="#destinos">Destinos Entrelazados</a>
-      <a href="#juicio-inasuno">El Juicio de Inasuno</a>
-      <a href="#guardianes-1">I — El campamento de Caleus</a>
-      <a href="#guardianes-2">II — Orígenes</a>
-      <a href="#guardianes-3">III — Torneo de Umbra</a>
-      <a href="#vision-psybernia">La Visión de la Nave Psybernia</a>
-      <a href="#epilogo-torneo">Lo que quedó del Torneo</a>
-      <a href="#karim-extenso">Karim Balteus — crónica extendida</a>
-      <a href="#sombras-luz">Sombras del pasado, dudas en la luz</a>
-    </nav>
+    <p class="prose" style="margin-top:1.25rem;color:var(--ink-dim);font-size:1.15rem;">Traiciones, torneos, juicios absurdos y familias que se arman a la fuerza. Elegí una puerta de entrada: ninguna pide haber leído lo anterior.</p>
+    <div class="hero-actions" style="margin-top:1.75rem;justify-content:flex-start;">
+      <a href="#linaje-zarick" class="btn btn-primary">Empezar por el principio</a>
+      <button type="button" class="btn btn-ghost" id="story-random">Sorprendeme con un relato</button>
+      <a href="#campanas" class="btn btn-ghost">Ver campañas y arcos</a>
+    </div>
   </div>
 </header>
 
 <main>
 
-<section id="campanas">
-  <div class="wrap story-block">
-    <p class="eyebrow">Índice</p>
-    <h2>Campañas y Arcos</h2>
-    <p style="color:var(--ink-dim);margin-bottom:1.5rem;">El orden completo de las campañas transcurridas en Apexora. Los relatos de esta página cubren los arcos iniciales — el resto se irá completando con el tiempo. Los ítems marcados con * son sesiones especiales. Cada jugador puede aportar su punto de vista de cada arco o sesión especial: no se borra el aporte de otro, y si hay algo que corregir se habla antes por Discord hasta llegar a un consenso.</p>
-
-    <div class="panel" style="margin-bottom:1.75rem;">
-      <p class="eyebrow">Campaña 1</p>
-      <h3 style="margin-top:0.4rem;">Guardianes de Apexora</h3>
-      <p style="color:var(--ink-dim);margin-top:0.6rem;">Un campamento para salvar al mundo. Un grupo forzado de amigos que intenta sostener aquello que se desmorona.</p>
-      <ul class="upcoming-chapters" style="grid-template-columns:1fr;margin-top:1rem;color:var(--ink);">
-        <li style="color:var(--ink);">— <strong>Umbra</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 6</span><br><span style="color:var(--ink-dim);">Tras la estadía en el campamento Sopharum, el grupo viaja a la capital de Umbra para el torneo Skaldrak Vlarim, certamen ocasional que reúne a los guerreros más fuertes del Oeste. Del campamento compiten Vina, Zarick, Karim y Bane.</span><details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--gold-soft);">Los 16 participantes</summary><p style="color:var(--ink-dim);margin-top:.4rem;">Aurora D'arwen (Lumis), Piuk (Arboris), Skaldor Frostpeak (Tribus Skaldrak), Lurim de Skaldrum, Willow Whisper (Arboris), Krymm (Psybernia), Solara Dawn (Lumis), Zarick (Arboris), Garvok de Marvikton, Lyra Shadowthorn (Umbra), Astra Skyfall (Luminarae Luxor), Bane Ironhand (Lumis), Asan (Arboris), Ova Caleus (Umbra), Vina (Skaldrum) y Karim Balteus (Skaldrum). Otras naciones no presentaron participantes.</p></details><br><span style="font-size:.9em;">Versiones de los jugadores: <a href="https://docs.google.com/document/d/1GgM_SSbsEQpJun5Byz2G9Q00N9BsVy2m/edit?usp=sharing" style="color:var(--gold-soft);" target="_blank" rel="noopener">Memorias de Umbra (Nones)</a> · <a href="https://docs.google.com/document/d/1TXcpin5C4XPMBkzA8a234TCqw2HZ1BKd/edit?usp=sharing" style="color:var(--gold-soft);" target="_blank" rel="noopener">Umbra, historia (Blade)</a></span></li>
-        <li style="color:var(--ink);">— <strong>Tribus Skaldrak</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 8</span><br><span style="color:var(--ink-dim);">En las montañas Skaldrak, la tribu Skaldrak —una de las más pequeñas y aisladas, con contacto solo con las tribus Adad y Koko— sigue a cuatro amigos de la infancia: Didih, Tatal, Zazap y Ruruk. El anciano Alal los considera los jóvenes con más potencial; Zazap es de las favoritas para sucederlo. Tres sesiones: «Tribu y enfrentamiento con ejército de Jup», «Tribu vecina en ruinas, enfrentamiento con Skaldor y búsqueda del sabio Skanuj» e «Infiltración en la fortaleza enemiga».</span></li>
-        <li style="color:var(--ink);">— <strong>Luminarae</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 7</span><br><span style="color:var(--ink-dim);">Un mes después del torneo, Karim, Zarick y Bane huyen al campamento Sopharum, donde Caleus y Abyssara trazan un plan: pedir ayuda a Luminarae, nación históricamente enfrentada a Umbra y dueña de la magia divina. Bane, por su lado, sube al pico Skaldrak para encontrarse a sí mismo. En el camino, por Arboris, los escolta el soldado umbreano Petat y se suma Kelshir, mago de clones que huye de la secta. En Luminarae los recibe File, amiga de Abyssara, que los disfraza (a Zarick con maquillaje y peluca, a Karim con una ilusión de juventud) para infiltrarse hasta los altos mandos, empezando por el mercado y su gran feria.</span><br><span style="font-size:.9em;">Desgrabación: <a href="https://docs.google.com/document/u/0/d/1jPgLF9P_fUtLM7vCO6UPpQdGz90agjfakNuljRnlgtU/edit" style="color:var(--gold-soft);" target="_blank" rel="noopener">luminarae1_mejor</a></span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Nobles Subterráneos</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 7</span><br><span style="color:var(--ink-dim);">Durante la estadía en Luminarae, Bane y Karim reciben el encargo de explorar una catacumba subterránea.</span></li>
-        <li style="color:var(--ink);">— <strong>Boro</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 8</span><br><span style="color:var(--ink-dim);">Historia paralela a la de los héroes: un grupo de excluidos investiga los planes de la facción Girax, la más violenta de la nación Boro.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Tharnok</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1008 · mes 8</span><br><span style="color:var(--ink-dim);">Sara y su creador, el señor Aldric, asisten a una misión especial en las inhóspitas tierras de Tharnok, en Boro, donde se cuece un misterio divino que perturba a sus escasos habitantes.</span></li>
-        <li style="color:var(--ink);">— <strong>Luxor</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 8</span><br><span style="color:var(--ink-dim);">Tras Luminarae, Karim, Bane y Zarick ascienden a la ciudad flotante Luxor: semidioses los salvan cuando están a punto de ser aniquilados por la reina Luminara IV.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Rascu</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1010 · mes 7</span><br><span style="color:var(--ink-dim);">Lynch y Ricardo viajan con su caravana por la isla Rascu, en Negatt, sin saber que están por presenciar la encarnación de un dios.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Castillo del Gato Mágico</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1000 · mes 1</span><br><span style="color:var(--ink-dim);">Plumarquias y Durgun se encuentran por casualidad y deben enfrentar animales peculiares en un castillo desolado de Arboris.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Celebración Héroes</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1008 · mes 3</span><br><span style="color:var(--ink-dim);">El pequeño Escin y el experimentado Icowha pasan un día agradable celebrando a los semidioses de Luxor, que bajan a Luminarae a ver a su gente.</span></li>
-        <li style="color:var(--ink);">— <strong>Lumis</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 9</span><br><span style="color:var(--ink-dim);">Tras lo de Luxor, los protagonistas caen en Lumis, justo en un taller de reparaciones cuya mecánica es Blue, una visitante de otro planeta.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Bestias</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 9</span><br><span style="color:var(--ink-dim);">Mientras los protagonistas buscan ayuda contra Umbra, el imperio usa a sus prisioneras, Vina y Seah, para cazar bestias divinas.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Tribunal de Skaldrum</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 7</span><br><span style="color:var(--ink-dim);">El panadero Ullontras hijo y el guerrero Axeraide intentan concientizar a su pueblo sobre los problemas locales mientras llegan políticos importantes.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Arborea y la Secta</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1010 · mes 5</span><br><span style="color:var(--ink-dim);">Tres seres raros son convocados a una aldea de Arboris para proteger a sus habitantes de la secta.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Academia Myrelith</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 900 · mes 10</span><br><span style="color:var(--ink-dim);">Un grupo de estudiantes de Myrelith pasa un día de entrenamiento en la academia local, aspirando a ser héroes de Luxor algún día.</span></li>
-        <li style="color:var(--ink);">— <strong><a href="#torneo-emperadores" style="color:var(--gold-soft);text-decoration:none;">Torneo de los Dos Emperadores ↓</a></strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1012 · mes 1</span><br><span style="color:var(--ink-dim);">La conclusión de los héroes de Apexora: Umbra organiza otro Skaldrak Vlarim, esta vez en territorio de Skaldrum, bajo la mirada del emperador Oci (semidiós, hijo de Ape) y en complicidad con Puj, emperador de Umbra.</span><details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--gold-soft);">Los 32 participantes</summary><p style="color:var(--ink-dim);margin-top:.4rem;">Astra, Axeraide, Azalange, Bane, Beo, Criatura, Dorianus, Joshua, Julio Balteus, Kaelen, Karim, Kelshir, Laki, Lurim, Lynch, Nailis, Net, Nefri, Orion, Ova, Pin, Plumarquias, Rolac, Seah, Solara, Tatal, Tilimad, Vela, Voragos, Xuelen, Zarick y Zazap.</p></details></li>
-      </ul>
+<section id="catalogo" class="story-catalog">
+  <div class="wrap">
+    <p class="eyebrow">Tres formas de entrar</p>
+    <div class="story-grid story-grid--featured">
+      <a class="story-card story-card--big" href="#linaje-zarick">
+        <span class="sc-tag">Luminarae y Arboris</span>
+        <span class="sc-title">El Linaje de Zarick</span>
+        <span class="sc-hook">Un romance prohibido, un padre que traicionó a una tribu entera y un hijo que nació con el estigma de ambos mundos.</span>
+        <span class="sc-foot">⏱ 2 min · Leer →</span>
+      </a>
+      <a class="story-card story-card--big" href="#destinos">
+        <span class="sc-tag">Umbra · Lumis</span>
+        <span class="sc-title">Destinos Entrelazados</span>
+        <span class="sc-hook">Un robo, una explosión, un joven al borde de la muerte… y el ladrón que cruzó el bosque por las copas de los árboles para salvarlo.</span>
+        <span class="sc-foot">⏱ 6 min · Leer →</span>
+      </a>
+      <a class="story-card story-card--big" href="#juicio-inasuno">
+        <span class="sc-tag">Sinfalía</span>
+        <span class="sc-title">El Juicio de Inasuno</span>
+        <span class="sc-hook">En Sinfalía estar feliz es ley. Dos forasteros en el banquillo y un solo abogado dispuesto a defenderlos.</span>
+        <span class="sc-foot">⏱ 2 min · Leer →</span>
+      </a>
     </div>
-
-    <div class="panel">
-      <p class="eyebrow">Campaña 2</p>
-      <h3 style="margin-top:0.4rem;">Sinfalía</h3>
-      <p style="color:var(--ink-dim);margin-top:0.6rem;"><em>La Armonía de los que Saludan.</em> Una etapa distinta: la narrativa se desplaza hacia las regiones orientales y presenta un elenco nuevo.</p>
-      <ul class="upcoming-chapters" style="grid-template-columns:1fr;margin-top:1rem;color:var(--ink);">
-        <li style="color:var(--ink);">— <strong>Vasané-Nalú</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1012 · mes 8</span><br><span style="color:var(--ink-dim);">Valmey envía una carta pidiendo ayuda a antiguos conocidos: Seila, Gobz (con su armadura Bason y su perro Rocky) y Lael (con su yegua). Juntos deben resolver un misterio en el lejano pueblo sinfaliense de Vasané-Nalú. Primero se reúnen en Malina, donde los informa la guerrera Volmí. Al llegar encuentran un lugar destruido y lleno de miedo; ayudan a un aldeano, pero el sitio resulta estar plagado de chacales cambiaformas. Ver también <a href="#juicio-inasuno" style="color:var(--gold-soft);">«El Juicio de Inasuno»</a> ↓ y «La invasión de Vasané-Nalú» en <a href="linea-tiempo.html" style="color:var(--gold-soft);">Cronología</a>.</span></li>
-        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Bahía Lunar</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1012 · mes 7</span><br><span style="color:var(--ink-dim);">Antes de Vasané-Nalú, Vina Miceus y su grupo exploran un misterio en Bahía Lunar, al sur del continente del este, donde se perdió un estudiante. El grupo se divide en tres: Vina y Bane van al centro del pueblo, y otro grupo recorre el bosque, formado por Augusto (cartógrafo), Jorven (soldado), Mansekino (marinero) y Vinko (sacerdote).</span></li>
-      </ul>
-    </div>
-
-    <div class="panel" id="campamento-sopharum" style="margin-top:1.75rem;">
-      <p class="eyebrow">Obra escrita</p>
-      <h3 style="margin-top:0.4rem;">Campamento Sopharum</h3>
-      <p style="color:var(--ink-dim);margin-top:0.6rem;">Un líder sospecha del entorno de su ciudad y decide formar un equipo de guerreros únicos.</p>
-      <p style="color:var(--ink-dim);margin-top:0.75rem;">Sus primeros capítulos forman parte del lore oficial del mundo. El más reciente, <strong>“Campamento, familia”</strong>, se publicó el 23 de septiembre de 2026 y refuerza la idea que atraviesa a todo el grupo: una familia que se va formando de a poco.</p>
-    </div>
-
-    <div class="panel" id="torneo-emperadores" style="margin-top:1.75rem;">
-      <p class="eyebrow">Recta final · Guardianes de Apexora</p>
-      <h3 style="margin-top:0.4rem;">El Torneo de los Dos Emperadores (TSV)</h3>
-      <ul class="upcoming-chapters" style="grid-template-columns:1fr;margin-top:1rem;color:var(--ink);">
-        <li>— Es el último hecho de la campaña de los Guardianes de Apexora, después de unos dos años de juego.</li>
-        <li>— Es el torneo Skaldrak Vlarim (TSV), y esta vez se celebra en Skaldrum.</li>
-        <li>— Lo presiden dos emperadores: Puj, de Umbra, y Oci, de Skaldrum.</li>
-        <li>— Compiten 27 participantes nuevos, tres por nación: 32 contando a los protagonistas.</li>
-        <li>— Termina con la lucha contra Puj y la encarnación de Ape, y con la muerte de Karim.</li>
-      </ul>
+    <p class="eyebrow" style="margin-top:2.5rem;">Más relatos</p>
+    <div class="story-grid">
+      <a class="story-card" href="#guardianes-1">
+        <span class="sc-tag">Guardianes · I</span>
+        <span class="sc-title">El campamento de Caleus</span>
+        <span class="sc-hook">Una pelea por una manzana, una feria que se agita y un orco gris imponente que lo cambia todo.</span>
+        <span class="sc-foot">⏱ 8 min · Leer →</span>
+      </a>
+      <a class="story-card" href="#guardianes-2">
+        <span class="sc-tag">Guardianes · II</span>
+        <span class="sc-title">Orígenes</span>
+        <span class="sc-hook">Un líder con cientos de años a cuestas y las historias de cómo cada uno terminó bajo su techo.</span>
+        <span class="sc-foot">⏱ 6 min · Leer →</span>
+      </a>
+      <a class="story-card" href="#guardianes-3">
+        <span class="sc-tag">Guardianes · III</span>
+        <span class="sc-title">Torneo de Umbra</span>
+        <span class="sc-hook">Un torneo, una sonrisa torcida y un último acto que “no acaba tan fácil”.</span>
+        <span class="sc-foot">⏱ 5 min · Leer →</span>
+      </a>
+      <a class="story-card" href="#vision-psybernia">
+        <span class="sc-tag">Guardianes · Visión</span>
+        <span class="sc-title">La Visión de la Nave Psybernia</span>
+        <span class="sc-hook">Una soberana que te pediría que te arrodillaras… si pudieras.</span>
+        <span class="sc-foot">⏱ 2 min · Leer →</span>
+      </a>
+      <a class="story-card" href="#epilogo-torneo">
+        <span class="sc-tag">Guardianes · Epílogo</span>
+        <span class="sc-title">Lo que quedó del Torneo</span>
+        <span class="sc-hook">Luminarae despide a sus caídos y el grupo se parte en rumbos distintos.</span>
+        <span class="sc-foot">⏱ 2 min · Leer →</span>
+      </a>
+      <a class="story-card" href="#sombras-luz">
+        <span class="sc-tag">Orden de Luxor</span>
+        <span class="sc-title">Sombras del pasado, dudas en la luz</span>
+        <span class="sc-hook">Treinta y cuatro enemigos rodean a un espía que está solo.</span>
+        <span class="sc-foot">⏱ 2 min · Leer →</span>
+      </a>
+      <a class="story-card" href="#karim-extenso">
+        <span class="sc-tag">Boceto extenso</span>
+        <span class="sc-title">Karim Balteus — crónica extendida</span>
+        <span class="sc-hook">Cinco minutos y cuarenta y siete segundos. Veintinueve cadáveres.</span>
+        <span class="sc-foot">⏱ 3 min · Leer →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -142,6 +144,7 @@
     <p class="eyebrow">Relato · Luminarae y Arboris</p>
     <h2>El Linaje de Zarick</h2>
     <p class="story-meta">Una historia de dos mundos que no debían encontrarse.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
+    <p class="story-hook">Un romance prohibido, un padre que traicionó a una tribu entera y un hijo que nació con el estigma de ambos mundos.</p>
 
     <h3>La soñadora de Luminarae</h3>
     <p>Evelyn von Grace creció en la ciudad flotante de Luminarae Luxor, hija del investigador Heiss von Grace. Su salud era frágil, pero su curiosidad por el mundo de la superficie no conocía límites. Una expedición junto a su padre la puso en contacto con la cultura orca, y con el tiempo llegó a dominar su idioma.</p>
@@ -163,7 +166,7 @@
     <h3>El legado de Zarick</h3>
     <p>Evelyn, embarazada, huyó a Umbra, perseguida por la sombra de la traición de su padre. Allí nació Zarick, y su estigma de nacimiento — ni humano puro ni orco de tribu — se convirtió en el eco de la historia de sus padres.</p>
     <p>Lo que fue de él después se cuenta en <a href="#guardianes-2" style="color:var(--gold-soft);">Orígenes</a> y en <a href="#destinos" style="color:var(--gold-soft);">Destinos Entrelazados</a>.</p>
-    <p class="next-story"><a href="#destinos">Siguiente: Destinos Entrelazados →</a></p>
+    <p class="next-story"><a href="#destinos">Siguiente: Destinos Entrelazados →</a><span class="ns-hook">Un robo, una explosión, un joven al borde de la muerte… y el ladrón que cruzó el bosque por las copas de los árboles para salvarlo.</span></p>
   </div>
 </section>
 
@@ -174,6 +177,7 @@
     <p class="eyebrow">Relato</p>
     <h2>Destinos Entrelazados</h2>
     <p class="story-meta">Cómo se conocieron Bane y Zarick.<span class="read-time"> · ⏱ 6 min de lectura</span></p>
+    <p class="story-hook">Un robo, una explosión, un joven al borde de la muerte… y el ladrón que cruzó el bosque por las copas de los árboles para salvarlo.</p>
 
     <p>El día de la iniciación de Bane con los merodeadores, estos lo asignaron a un pequeño grupo para recuperar un objeto que se había perdido de una de las carabanas que negociaban entre Lumis y Umbra con energía.</p>
     <p>Sin muchos más detalles dados, las instrucciones apuntaban a que el perpetrador junto al objeto se ubicarían en la arboleda cercana, o más bien en los confines de ese territorio de Arboris. Por el camino, el grupo se conformaba de cuatro merodeadores: Urmun, siendo el encargado de supervisar a los tres iniciados Bane, Mike y Loran.</p>
@@ -193,31 +197,7 @@
     <p>Una mirada entre ambos daba a notar que no se iban a detener allí. Con su fiel sentido del olfato, Zarick guio a Bane mientras esquivaban los disparos hacia una entrada de las alcantarillas. Al entrar y cerrar el paso, ambos lograron escuchar cómo los guardias seguían hacia delante, sintiéndose un poco aliviados por haberlos perdido. Se disponen a buscar una salida, la cual, con un poco de tiempo, logran encontrar, llevándolos a las afueras de la parte norte de los alcantarillados de Lumis.</p>
     <p>Allí, al continuar un poco y casi despedirse entre sí, se encontraron con un sujeto en armadura y colores rojos, al que Bane erróneamente cree afiliado con la ciudad. Al intentar volver a correr, Zarick lo retiene: la persona frente a ellos era un umbriano, y no uno cualquiera, sino el mismísimo líder de la facción Sopharum, Caleus, un anciano imponente.</p>
     <p>Una vez Zarick hace las presentaciones, Caleus les sugiere, en tono autoritario casi como una orden, que deberían seguirlo. Sin mucha otra opción — Bane mirando a la ciudad, y Zarick mirando en dirección a la montaña cerca de Arboris — ambos deciden seguir a aquel sujeto.</p>
-    <p class="next-story"><a href="#juicio-inasuno">Siguiente: El Juicio de Inasuno →</a></p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<section id="juicio-inasuno">
-  <div class="wrap story-block">
-    <p class="eyebrow">Relato · Sinfalía</p>
-    <h2>El Juicio de Inasuno</h2>
-    <p class="story-meta">Cómo Gobz Gobinson escapó de una sentencia de espionaje — y encontró un abogado y un hogar en el mismo juicio.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
-
-    <p>Gobz había cruzado el desierto hacia el este dado por muerto, con el cuerpo todavía resentido por la huida de las instalaciones de Psybernia. Lo capturó una patrulla de Krahn antes de que pudiera explicar quién era, y lo que encontraron —un goblin de apenas 1,12 metros, sostenido en pie por una armadura robótica maltrecha— no hizo más que confirmar sus sospechas. Fue extraditado a Inasuno como posible espía de la nación que lo había desechado.</p>
-
-    <p>No era el único en el banquillo. Lael, otro recién llegado, acababa de escapar del Presidio de Krahn y todavía cargaba con algo perturbador que había presenciado allí. Ambos eran forasteros en Inasuno, y el tribunal debía evaluar su condición para decidir si eran aptos para vivir en Sinfalía.</p>
-
-    <p>El juez Salín presidió la sala con la calma helada de quien ya ha visto demasiados casos como este bajo el nuevo orden que la Tribu Zzamua impuso sobre Sinfalía. Frente a él, un joven abogado defensor llamado Valmey Sialí tomó el caso: nadie más en Inasuno quería representar a un posible espía. Entre los dos, en los días previos al juicio, repararon juntos el Armazón Basón V.032 que mantenía a Gobz con vida — Valmey entendía de leyes y de comercio, pero fue la curiosidad compartida de ambos por cómo funcionaba aquel cuerpo mecánico la que terminó de sellar la confianza entre ellos.</p>
-
-    <p>En los juicios, Valmey cuenta con la ayuda de Visú, un orco de unos 25 años que además es su amigo. Salín es uno de los jueces más difíciles de vencer; lo que logra intimidarlo es atraer gente para que presencie el juicio en público.</p>
-
-    <p>Valmey argumentó lo que Gobz no podía probar con palabras: que un fugitivo de un experimento fallido no es un agente de quien lo desechó, sino su prueba viviente en contra. La corte, más interesada en encontrar un culpable rápido que en el rigor de la duda, tardó en ceder — pero cedió. Gobz fue declarado inocente.</p>
-
-    <p>Fue Valmey quien lo introdujo a la cultura de Sinfalía y le recomendó viajar al volcán de Fuana, donde se convirtió en aprendiz del herrero draconiano Facó Melí durante dos años, aprendiendo vidrio, alquimia y forja. Abrió su propia tienda poco después, y se ganó un apodo que todavía lo sigue: "el pequeño genio" — o, en la lengua de Sinfalía, "U vulié guná".</p>
-    <p style="color:var(--ink-dim);"><em>Once años más tarde, una carta de Valmey pidiéndole un favor en Naluvia volvería a cruzar sus caminos — esa historia todavía no se ha contado.</em></p>
-    <p class="next-story"><a href="#guardianes-1">Siguiente: I — El campamento de Caleus →</a></p>
+    <p class="next-story"><a href="#guardianes-1">Siguiente: El campamento de Caleus →</a><span class="ns-hook">Una pelea por una manzana, una feria que se agita y un orco gris imponente que lo cambia todo.</span></p>
   </div>
 </section>
 
@@ -228,6 +208,7 @@
     <p class="eyebrow">Guardianes de Apexora</p>
     <h2>I — El campamento de Caleus</h2>
     <p class="story-meta"><span class="read-time">⏱ 8 min de lectura</span></p>
+    <p class="story-hook">Una pelea por una manzana, una feria que se agita y un orco gris imponente que lo cambia todo.</p>
 
     <p class="dialogue">—Dame esa maldita manzana —gritó ferozmente Zarick mientras estiraba las manos hacia Bane, y este le sostenía el rostro con su mano robótica.</p>
     <p class="dialogue">—Debes dejar para todos, verde, por favor contrólate —murmuraba el androide entre dientes mientras intentaba mantener su paciencia.</p>
@@ -298,7 +279,7 @@
     <p class="dialogue">—Qué interesante dato, Pin, no creo haberte preguntado —contestó Seah abriendo exageradamente los ojos hacia Pin, mientras este cambiaba su gesto a uno más enfadado.</p>
     <p>Mientras comenzaban a caminar observando las estructuras añejas de la ciudad, la multitud comenzó a agitarse en una feria cercana. Entre tantas personas se destacaba un gran orco gris imponente. Su extrema musculatura y su cicatriz en uno de sus ojos lo hacían un gran foco de atención. El sujeto se acercaba al grupo, el cual lo miraba con atención.</p>
     <p class="dialogue">—Ser Puj —mencionó Zarick preocupado, mientras la sombra del orco comenzaba a eclipsarlos.</p>
-    <p class="next-story"><a href="#guardianes-2">Siguiente: II — Orígenes →</a></p>
+    <p class="next-story"><a href="#guardianes-2">Siguiente: Orígenes →</a><span class="ns-hook">Un líder con cientos de años a cuestas y las historias de cómo cada uno terminó bajo su techo.</span></p>
   </div>
 </section>
 
@@ -309,6 +290,7 @@
     <p class="eyebrow">Guardianes de Apexora</p>
     <h2>II — Orígenes</h2>
     <p class="story-meta">Cómo llegó cada uno al campamento de Caleus.<span class="read-time"> · ⏱ 6 min de lectura</span></p>
+    <p class="story-hook">Un líder con cientos de años a cuestas y las historias de cómo cada uno terminó bajo su techo.</p>
 
     <h4>Bane</h4>
     <p>Nacido en la ciudad de Liminae, el joven Bane Forrest fue bañado desde sus primeros años con la luz de las innovaciones que pasaban desde la capital a los campos cercanos. Con curiosidad incesante, logró dar con el pasado de su padre y, siguiendo parte de sus pasos, pasó la tardía parte de su infancia y la mayoría de su adolescencia instaurándose como un Recon-Mer, un merodeador de reconocimiento. Hasta que, en una de sus misiones de recolección y extracción, un accidente lo haría replantear su visión tanto psicológica como figurativamente. Tomando una decisión que lo llevó a exiliarse por sus propios valores y a despegarse de su antiguo apellido como deseo de un nuevo comienzo, terminó junto a su amigo y salvador Zarick, bajo la supervisión del viejo Caleus, pasando los últimos cuatro años de su adolescencia formándose para repagar la generosidad del calvo por acogerlo bajo su ala.</p>
@@ -337,7 +319,7 @@
     <h4>Caleus</h4>
     <p>Caleus — a quien no le agrada que lo llamen por su nombre de pila, "Mit" — nació hace cientos de años en la ciudad de Umbra, en una familia acomodada. En uno de sus viajes hacia la rural Luminarae conoció a un sujeto muy sabio con quien entabló una gran amistad, hasta que encontró una carta que revelaba que su amigo lo espiaba para otro bando. Ciego de rabia, lo golpeó hasta dejarlo inconsciente, y se juró a sí mismo destruir Luminarae.</p>
     <p>Su familia permitió que se uniera a la horda umbreana, y su liderazgo convenció al general Kru de iniciar la invasión de Luminarae. La invasión fue repelida por el primero de los héroes de Luxor: su propio ex amigo, Solaris, quien lo condenó a la inmortalidad para que recordara su error por siempre. Décadas después, tras la muerte del general Kru, Umbra se reestructuró en las facciones Accurionis, Vigorix y Sopharum — esta última, liderada por Caleus, que hizo de ella su casa, reclutando a todo guerrero de buen corazón que se cruzó en su camino. Así nació, en el año 998, el Campamento Sopharum.</p>
-    <p class="next-story"><a href="#guardianes-3">Siguiente: III — Torneo de Umbra →</a></p>
+    <p class="next-story"><a href="#guardianes-3">Siguiente: Torneo de Umbra →</a><span class="ns-hook">Un torneo, una sonrisa torcida y un último acto que “no acaba tan fácil”.</span></p>
   </div>
 </section>
 
@@ -348,6 +330,7 @@
     <p class="eyebrow">Guardianes de Apexora</p>
     <h2>III — Torneo de Umbra</h2>
     <p class="story-meta"><span class="read-time">⏱ 5 min de lectura</span></p>
+    <p class="story-hook">Un torneo, una sonrisa torcida y un último acto que “no acaba tan fácil”.</p>
 
     <div class="bracket-note">
       <p style="margin:0;"><strong>Participantes destacados:</strong> Aurora D'arwen (hipertech de Lumis, con un traje que se transforma en toro o robot gigante), Piuk y Asan (hermanos de las tribus Skaldrak), Lurim de Skaldrum (aspirante a reina), Willow (shamán de Arboris), Krymm (nómada de apariencia moribunda con una espada larga de fuego), Solara (guerrera con exotraje de Lumis y espada eléctrica), Garvok (pirata de Markivton con pistola mosquetera y un mono al hombro), Lyra Shadowthorn (guerrera brutal de Umbra que pelea con los puños vendados), Astra Skyfall (aspirante a heroína de Luxor que genera agujeros negros y vuela), y Ova Caleus (hija de Mit Caleus, que pelea con nudillos en forma de garra y busca vengarse de su padre).</p>
@@ -372,7 +355,7 @@
     <p>Karim y Zarick habían quedado rodeados por las sombras en el centro de la arena. Karim, con el estoque en alto, se plantó frente a su compañero cuando una de las entidades se abalanzó — el semi-orco, un paso atrás, no llegó a reaccionar a tiempo. El golpe que debía haber sido para Zarick alcanzó a Karim de lleno.</p>
     <p class="dialogue">—Aquí… no acaba mi acto tan fácil —murmuró Karim con una sonrisa torcida, cayendo de rodillas mientras Zarick lo sostenía a los gritos.</p>
     <p>Poco a poco, quienes quedaban en pie —guerreros del campamento, villanos enmascarados, soldados de Umbra, curiosos del torneo— se fueron juntando en el centro de la arena, unidos por instinto de supervivencia más que por alianza. La energía que salía del portal se retorció, atravesó a Orx y a Oci como una corriente, y se perdió en el cielo con un último destello, dejando tras de sí una arena partida al medio y un silencio que nadie se atrevía a romper primero.</p>
-    <p class="next-story"><a href="#vision-psybernia">Siguiente: La Visión de la Nave Psybernia →</a></p>
+    <p class="next-story"><a href="#vision-psybernia">Siguiente: La Visión de la Nave Psybernia →</a><span class="ns-hook">Una soberana que te pediría que te arrodillaras… si pudieras.</span></p>
   </div>
 </section>
 
@@ -383,6 +366,7 @@
     <p class="eyebrow">Guardianes de Apexora</p>
     <h2>La Visión de la Nave Psybernia</h2>
     <p class="story-meta">Lo que Laki vio cuando la energía del portal pasó cerca de las gradas.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
+    <p class="story-hook">Una soberana que te pediría que te arrodillaras… si pudieras.</p>
 
     <p>En medio del caos, un pulso de la energía que escapaba del portal rozó a Laki en las gradas. Para todos los que estaban a su lado, no pasó de un segundo de mirada perdida. Para él, fue mucho más.</p>
     <p>Se vio a sí mismo colgando, las muñecas atadas por encima de la cabeza, la sangre resbalando desde algún corte que no recordaba haber recibido. A su lado, en la misma posición, estaba una chica que no reconocía — su visión se quedó fija en ella un instante, antes de que una figura metálica, ZX-51, le tapara la boca para que no gritara.</p>
@@ -394,7 +378,7 @@
     <p class="dialogue">—Creíste que tu familia, tu linaje, escaparía como si nada. Por supuesto que habría consecuencias. ¿Qué haré con ustedes? Podría volarles los órganos aquí mismo y decir que los encontré así por su desobediencia. Sobre todo a vos, Laki Unmei Dust —escupió al suelo—. Cargás con generaciones de deshonra a nuestro hogar, la cúspide de la humanidad. ¿Qué tenés para decir al respecto?</p>
     <p class="dialogue">—Yo soy la soberana de aquel pequeño modelo de humanidad perfecta, la matriarca del ingenio humano, el cual Apexora resiste. Soy Valeria… te pediría que te arrodillaras, pero no podés —remató con una risa deforme.</p>
     <p>La visión se cortó de golpe cuando Robert lo sacudió del hombro, gritando su nombre por encima del ruido de la arena derrumbándose. Laki parpadeó, de vuelta en las gradas, con el nombre "Valeria" grabado en la memoria y una pregunta que no se atrevía a decir en voz alta: ¿por qué esa mujer sabía su apellido completo antes de que él mismo lo hubiera dicho jamás frente a un desconocido?</p>
-    <p class="next-story"><a href="#epilogo-torneo">Siguiente: Lo que quedó del Torneo →</a></p>
+    <p class="next-story"><a href="#epilogo-torneo">Siguiente: Lo que quedó del Torneo →</a><span class="ns-hook">Luminarae despide a sus caídos y el grupo se parte en rumbos distintos.</span></p>
   </div>
 </section>
 
@@ -405,12 +389,62 @@
     <p class="eyebrow">Guardianes de Apexora</p>
     <h2>Lo que quedó del Torneo</h2>
     <p class="story-meta">Luminarae despide a sus caídos, y el grupo se reparte por Apexora.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
+    <p class="story-hook">Luminarae despide a sus caídos y el grupo se parte en rumbos distintos.</p>
 
     <p>Luminarae Luxor recibió los cuerpos de Karim Balteus y Astra Skyfall con los honores que rara vez se conceden a quien no nació dentro de sus torres flotantes. Se levantaron dos estatuas, una al lado de la otra, frente al templo principal: el Bailarín del Estoque congelado a mitad de un giro, y la aspirante a heroína con las manos abiertas hacia el cielo, como sosteniendo un vórtice que ya no existía.</p>
     <p>Laki, todavía con la voz de Valeria resonándole en la cabeza, se acercó al altar que Karim llevaba consigo desde hacía años — el que tenía grabados los nombres de Romaia y Calliope. Él no tenía tumba propia donde dejarle nada a sus propios padres, esos que según la visión habían huido de Psybernia generaciones atrás; nunca la había tenido. Así que dejó la carta que llevaba escrita desde antes del torneo entre las lápidas improvisadas de la familia de Karim, como si con eso alcanzara para despedirse también de la suya.</p>
     <p>El grupo no volvió completo al campamento. Zarick, Tomah y Seah decidieron no regresar a Umbra: partieron hacia Arboris para armar, junto a los sobrevivientes que quisieran sumarse, una guerrilla que plantara cara a la secta que había desatado el portal en la arena. Laki, por su parte, dejó a Robert y Martina en Markivton con la promesa de volver, y emprendió viaje hacia Psybernia junto a Zene — la chica que había visto atada a su lado en la visión, y que resultó ser muy real cuando la encontró, días después, buscando también respuestas sobre el mismo lugar.</p>
     <p style="color:var(--ink-dim);"><em>Qué encontraron Laki y Zene al llegar a Psybernia, y qué tan lejos llegó la guerrilla de Zarick en Arboris, son historias que todavía no se han contado del todo.</em></p>
-    <p class="next-story"><a href="#karim-extenso">Siguiente: Karim Balteus — crónica extendida →</a></p>
+    <p class="next-story"><a href="#sombras-luz">Siguiente: Sombras del pasado, dudas en la luz →</a><span class="ns-hook">Treinta y cuatro enemigos rodean a un espía que está solo.</span></p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="sombras-luz">
+  <div class="wrap story-block">
+    <p class="eyebrow">Relato · Orden de los Caballeros de Luxor</p>
+    <h2>Sombras del pasado, dudas en la luz</h2>
+    <p class="story-meta">Cómo Andreas Light llegó a ser el segundo asiento del tercer círculo — y el precio que pagó por eso.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
+    <p class="story-hook">Treinta y cuatro enemigos rodean a un espía que está solo.</p>
+
+    <p>Un grupo de extremistas atacó una instalación de gran importancia para el Consejo. De forma urgente, este movilizó a todo el personal disponible de la orden para identificar a los culpables y llevarles la justicia radiante. Se organizó un grupo pequeño: un recluta en proceso de "ascensión", un activo experimentado llamado Mikael, Rose, y Andreas. En dos días ya habían identificado a todos los miembros del grupo terrorista a excepción del líder — en gran parte gracias a los aportes de Rose, cuyas habilidades de infiltración y recopilación de información Andreas consideraba las mejores que había visto. Aun así, algo estaba mal, y él lo sabía: el líder de los terroristas era demasiado bueno.</p>
+
+    <p>En una jugada arriesgada, Andreas decidió enviar al recluta a su muerte. Le hizo decir por el comunicador que tenía información relevante sobre la guarida del líder, y algo que "no les iba a gustar" — para que, poco después, Rose recibiera un mensaje privado avisando de un posible traidor en la orden y sugiriéndole reunirse en una ubicación apartada para mantener todo en secreto. Le ordenó al novato ir, mientras él lo acompañaba desde las sombras, y presenció cómo Rose acababa con su vida.</p>
+
+    <p>Su capacidad de percepción no fue suficiente para detectar a Andreas. La noqueó, la llevó a un lugar alejado y privado para interrogarla, y ella le habló de cómo el Consejo les ocultaba cosas y los obligaba a matar inocentes "por el bien de Luxor" — un bien tergiversado a conveniencia de sus propios integrantes. Al final, acabó con su vida.</p>
+
+    <p>Solo, se infiltró disfrazado como el líder terrorista en una de sus reuniones. Eliminó a unos cuantos, pero no tardaron en descubrirlo: un grupo de 34 personas lo rodeó, confiados en que un espía sin coartada no era una gran amenaza. Se equivocaron. Ese mismo día, 34 personas murieron — no por algún motivo en especial; de hecho, eran más valiosas como sujetos de interrogación, pero había un sentimiento del que Andreas necesitaba distraerse.</p>
+
+    <p>Al finalizar la misión, le ofrecieron el primer asiento del tercer círculo — el asiento de Rose. Lo rechazó, argumentando que no era digno de tal honor. Desde entonces, cada vez que tiene tiempo para pensar, lo invade el mismo sentimiento de aquella vez.</p>
+
+    <p style="color:var(--ink-dim);"><em>Hoy, Andreas lleva a cabo la Operación Negro bajo la identidad de León Skyrider — ver su ficha en <a href="personajes.html#personaje-andreas" style="color:var(--gold-soft);">Personajes</a> y la estructura de la Orden en <a href="mundo.html#orden-ocl" style="color:var(--gold-soft);">Mundo</a>.</em></p>
+    <p class="next-story"><a href="#juicio-inasuno">Siguiente: El Juicio de Inasuno →</a><span class="ns-hook">En Sinfalía estar feliz es ley. Dos forasteros en el banquillo y un solo abogado dispuesto a defenderlos.</span></p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="juicio-inasuno">
+  <div class="wrap story-block">
+    <p class="eyebrow">Relato · Sinfalía</p>
+    <h2>El Juicio de Inasuno</h2>
+    <p class="story-meta">Cómo Gobz Gobinson escapó de una sentencia de espionaje — y encontró un abogado y un hogar en el mismo juicio.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
+    <p class="story-hook">En Sinfalía estar feliz es ley. Dos forasteros en el banquillo y un solo abogado dispuesto a defenderlos.</p>
+
+    <p>Gobz había cruzado el desierto hacia el este dado por muerto, con el cuerpo todavía resentido por la huida de las instalaciones de Psybernia. Lo capturó una patrulla de Krahn antes de que pudiera explicar quién era, y lo que encontraron —un goblin de apenas 1,12 metros, sostenido en pie por una armadura robótica maltrecha— no hizo más que confirmar sus sospechas. Fue extraditado a Inasuno como posible espía de la nación que lo había desechado.</p>
+
+    <p>No era el único en el banquillo. Lael, otro recién llegado, acababa de escapar del Presidio de Krahn y todavía cargaba con algo perturbador que había presenciado allí. Ambos eran forasteros en Inasuno, y el tribunal debía evaluar su condición para decidir si eran aptos para vivir en Sinfalía.</p>
+
+    <p>El juez Salín presidió la sala con la calma helada de quien ya ha visto demasiados casos como este bajo el nuevo orden que la Tribu Zzamua impuso sobre Sinfalía. Frente a él, un joven abogado defensor llamado Valmey Sialí tomó el caso: nadie más en Inasuno quería representar a un posible espía. Entre los dos, en los días previos al juicio, repararon juntos el Armazón Basón V.032 que mantenía a Gobz con vida — Valmey entendía de leyes y de comercio, pero fue la curiosidad compartida de ambos por cómo funcionaba aquel cuerpo mecánico la que terminó de sellar la confianza entre ellos.</p>
+
+    <p>En los juicios, Valmey cuenta con la ayuda de Visú, un orco de unos 25 años que además es su amigo. Salín es uno de los jueces más difíciles de vencer; lo que logra intimidarlo es atraer gente para que presencie el juicio en público.</p>
+
+    <p>Valmey argumentó lo que Gobz no podía probar con palabras: que un fugitivo de un experimento fallido no es un agente de quien lo desechó, sino su prueba viviente en contra. La corte, más interesada en encontrar un culpable rápido que en el rigor de la duda, tardó en ceder — pero cedió. Gobz fue declarado inocente.</p>
+
+    <p>Fue Valmey quien lo introdujo a la cultura de Sinfalía y le recomendó viajar al volcán de Fuana, donde se convirtió en aprendiz del herrero draconiano Facó Melí durante dos años, aprendiendo vidrio, alquimia y forja. Abrió su propia tienda poco después, y se ganó un apodo que todavía lo sigue: "el pequeño genio" — o, en la lengua de Sinfalía, "U vulié guná".</p>
+    <p style="color:var(--ink-dim);"><em>Once años más tarde, una carta de Valmey pidiéndole un favor en Naluvia volvería a cruzar sus caminos — esa historia todavía no se ha contado.</em></p>
+    <p class="next-story"><a href="#karim-extenso">Siguiente: Karim Balteus — crónica extendida →</a><span class="ns-hook">Cinco minutos y cuarenta y siete segundos. Veintinueve cadáveres.</span></p>
   </div>
 </section>
 
@@ -421,6 +455,7 @@
     <p class="eyebrow">Boceto extenso</p>
     <h2>Karim Balteus — crónica extendida</h2>
     <p class="story-meta">Una versión más detallada y anterior del origen de Karim. Algunos nombres difieren de la versión definitiva de arriba (Romaia en vez de RiaRia, y el nombre de la academia y del refugio aún sin decidir) mientras el canon termina de asentarse — se conserva tal cual para no perder el detalle de la escena.<span class="read-time"> · ⏱ 3 min de lectura</span></p>
+    <p class="story-hook">Cinco minutos y cuarenta y siete segundos. Veintinueve cadáveres.</p>
 
     <p>A una edad muy temprana la vida solo le dio una salida: convertirse en mercenario. Su familia ya no podía alimentar a más bocas, y la última en llegar fue la que hubo que sacrificar. Se convirtió en miembro de la academia, una facción de mercenarios caracterizada por métodos muy dispares al resto de grupos, donde el honor era inicio y final de todo. La intensidad de su entrenamiento fue mucho peor de lo que Karim llegó a pensar: por cada duelo perdido recibió una cicatriz, "…porque de cada duelo se aprende algo y por ello no debes olvidarlos".</p>
 
@@ -437,33 +472,72 @@
     <p>Cinco minutos y cuarenta y siete segundos necesitó Karim para dejar tras de sí un charco de sangre formado por 29 cadáveres. Cuando el oficial se lanzó contra él, la hoja de Karim cedió y se partió en dos; en el intercambio, Karim detuvo con su propia mano desnuda un tajo que iba dirigido a su cuello, aprovechó la sorpresa del oficial, lo desarmó y terminó el duelo a golpes hasta que sus propias manos cedieron por el dolor.</p>
 
     <p>Agotado, buscó vendas entre las pertenencias del oficial y encontró, junto a ellas, una carta destinada a anunciar su propia muerte a la academia. La tomó, se vendó las heridas, se despidió de Romaia y Calliope, y partió con un nuevo propósito: ajustar cuentas con la academia, sabiendo que él solo jamás podría contra toda la institución. Desde entonces alzó un altar en honor a su familia y encargó un nuevo estoque, ornamentado y funcional, con los nombres de Romaia y Calliope grabados a lo largo de la hoja — su nuevo mayor tesoro. Todo hasta que un tal Caleus, líder de Sopharum, lo admitió en uno de sus campamentos.</p>
-    <p class="next-story"><a href="#sombras-luz">Siguiente: Sombras del pasado, dudas en la luz →</a></p>
+    <p class="next-story"><a href="escritos.html">¿Tenés una historia de Apexora? Escribila →</a><span class="ns-hook">La comunidad también cuenta el mundo, y cada escrito te da Sinfalita.</span></p>
   </div>
 </section>
 
 <hr class="divider">
 
-<section id="sombras-luz">
+<section id="campanas">
   <div class="wrap story-block">
-    <p class="eyebrow">Relato · Orden de los Caballeros de Luxor</p>
-    <h2>Sombras del pasado, dudas en la luz</h2>
-    <p class="story-meta">Cómo Andreas Light llegó a ser el segundo asiento del tercer círculo — y el precio que pagó por eso.<span class="read-time"> · ⏱ 2 min de lectura</span></p>
+    <p class="eyebrow">Archivo</p>
+    <h2>Campañas y Arcos</h2>
+    <p style="color:var(--ink-dim);margin-bottom:1.5rem;">El orden completo de las campañas transcurridas en Apexora. Los relatos de esta página cubren los arcos iniciales — el resto se irá completando con el tiempo. Los ítems marcados con * son sesiones especiales. Cada jugador puede aportar su punto de vista de cada arco o sesión especial: no se borra el aporte de otro, y si hay algo que corregir se habla antes por Discord hasta llegar a un consenso.</p>
 
-    <p>Un grupo de extremistas atacó una instalación de gran importancia para el Consejo. De forma urgente, este movilizó a todo el personal disponible de la orden para identificar a los culpables y llevarles la justicia radiante. Se organizó un grupo pequeño: un recluta en proceso de "ascensión", un activo experimentado llamado Mikael, Rose, y Andreas. En dos días ya habían identificado a todos los miembros del grupo terrorista a excepción del líder — en gran parte gracias a los aportes de Rose, cuyas habilidades de infiltración y recopilación de información Andreas consideraba las mejores que había visto. Aun así, algo estaba mal, y él lo sabía: el líder de los terroristas era demasiado bueno.</p>
+    <div class="panel" style="margin-bottom:1.75rem;">
+      <p class="eyebrow">Campaña 1</p>
+      <h3 style="margin-top:0.4rem;">Guardianes de Apexora</h3>
+      <p style="color:var(--ink-dim);margin-top:0.6rem;">Un campamento para salvar al mundo. Un grupo forzado de amigos que intenta sostener aquello que se desmorona.</p>
+      <ul class="upcoming-chapters" style="grid-template-columns:1fr;margin-top:1rem;color:var(--ink);">
+        <li style="color:var(--ink);">— <strong>Umbra</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 6</span><br><span style="color:var(--ink-dim);">Tras la estadía en el campamento Sopharum, el grupo viaja a la capital de Umbra para el torneo Skaldrak Vlarim, certamen ocasional que reúne a los guerreros más fuertes del Oeste. Del campamento compiten Vina, Zarick, Karim y Bane.</span><details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--gold-soft);">Los 16 participantes</summary><p style="color:var(--ink-dim);margin-top:.4rem;">Aurora D'arwen (Lumis), Piuk (Arboris), Skaldor Frostpeak (Tribus Skaldrak), Lurim de Skaldrum, Willow Whisper (Arboris), Krymm (Psybernia), Solara Dawn (Lumis), Zarick (Arboris), Garvok de Marvikton, Lyra Shadowthorn (Umbra), Astra Skyfall (Luminarae Luxor), Bane Ironhand (Lumis), Asan (Arboris), Ova Caleus (Umbra), Vina (Skaldrum) y Karim Balteus (Skaldrum). Otras naciones no presentaron participantes.</p></details><br><span style="font-size:.9em;">Versiones de los jugadores: <a href="https://docs.google.com/document/d/1GgM_SSbsEQpJun5Byz2G9Q00N9BsVy2m/edit?usp=sharing" style="color:var(--gold-soft);" target="_blank" rel="noopener">Memorias de Umbra (Nones)</a> · <a href="https://docs.google.com/document/d/1TXcpin5C4XPMBkzA8a234TCqw2HZ1BKd/edit?usp=sharing" style="color:var(--gold-soft);" target="_blank" rel="noopener">Umbra, historia (Blade)</a></span></li>
+        <li style="color:var(--ink);">— <strong>Tribus Skaldrak</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 8</span><br><span style="color:var(--ink-dim);">En las montañas Skaldrak, la tribu Skaldrak —una de las más pequeñas y aisladas, con contacto solo con las tribus Adad y Koko— sigue a cuatro amigos de la infancia: Didih, Tatal, Zazap y Ruruk. El anciano Alal los considera los jóvenes con más potencial; Zazap es de las favoritas para sucederlo. Tres sesiones: «Tribu y enfrentamiento con ejército de Jup», «Tribu vecina en ruinas, enfrentamiento con Skaldor y búsqueda del sabio Skanuj» e «Infiltración en la fortaleza enemiga».</span></li>
+        <li style="color:var(--ink);">— <strong>Luminarae</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 7</span><br><span style="color:var(--ink-dim);">Un mes después del torneo, Karim, Zarick y Bane huyen al campamento Sopharum, donde Caleus y Abyssara trazan un plan: pedir ayuda a Luminarae, nación históricamente enfrentada a Umbra y dueña de la magia divina. Bane, por su lado, sube al pico Skaldrak para encontrarse a sí mismo. En el camino, por Arboris, los escolta el soldado umbreano Petat y se suma Kelshir, mago de clones que huye de la secta. En Luminarae los recibe File, amiga de Abyssara, que los disfraza (a Zarick con maquillaje y peluca, a Karim con una ilusión de juventud) para infiltrarse hasta los altos mandos, empezando por el mercado y su gran feria.</span><br><span style="font-size:.9em;">Desgrabación: <a href="https://docs.google.com/document/u/0/d/1jPgLF9P_fUtLM7vCO6UPpQdGz90agjfakNuljRnlgtU/edit" style="color:var(--gold-soft);" target="_blank" rel="noopener">luminarae1_mejor</a></span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Nobles Subterráneos</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 7</span><br><span style="color:var(--ink-dim);">Durante la estadía en Luminarae, Bane y Karim reciben el encargo de explorar una catacumba subterránea.</span></li>
+        <li style="color:var(--ink);">— <strong>Boro</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 8</span><br><span style="color:var(--ink-dim);">Historia paralela a la de los héroes: un grupo de excluidos investiga los planes de la facción Girax, la más violenta de la nación Boro.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Tharnok</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1008 · mes 8</span><br><span style="color:var(--ink-dim);">Sara y su creador, el señor Aldric, asisten a una misión especial en las inhóspitas tierras de Tharnok, en Boro, donde se cuece un misterio divino que perturba a sus escasos habitantes.</span></li>
+        <li style="color:var(--ink);">— <strong>Luxor</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 8</span><br><span style="color:var(--ink-dim);">Tras Luminarae, Karim, Bane y Zarick ascienden a la ciudad flotante Luxor: semidioses los salvan cuando están a punto de ser aniquilados por la reina Luminara IV.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Rascu</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1010 · mes 7</span><br><span style="color:var(--ink-dim);">Lynch y Ricardo viajan con su caravana por la isla Rascu, en Negatt, sin saber que están por presenciar la encarnación de un dios.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Castillo del Gato Mágico</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1000 · mes 1</span><br><span style="color:var(--ink-dim);">Plumarquias y Durgun se encuentran por casualidad y deben enfrentar animales peculiares en un castillo desolado de Arboris.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Celebración Héroes</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1008 · mes 3</span><br><span style="color:var(--ink-dim);">El pequeño Escin y el experimentado Icowha pasan un día agradable celebrando a los semidioses de Luxor, que bajan a Luminarae a ver a su gente.</span></li>
+        <li style="color:var(--ink);">— <strong>Lumis</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 9</span><br><span style="color:var(--ink-dim);">Tras lo de Luxor, los protagonistas caen en Lumis, justo en un taller de reparaciones cuya mecánica es Blue, una visitante de otro planeta.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Bestias</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 9</span><br><span style="color:var(--ink-dim);">Mientras los protagonistas buscan ayuda contra Umbra, el imperio usa a sus prisioneras, Vina y Seah, para cazar bestias divinas.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Tribunal de Skaldrum</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1011 · mes 7</span><br><span style="color:var(--ink-dim);">El panadero Ullontras hijo y el guerrero Axeraide intentan concientizar a su pueblo sobre los problemas locales mientras llegan políticos importantes.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Arborea y la Secta</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1010 · mes 5</span><br><span style="color:var(--ink-dim);">Tres seres raros son convocados a una aldea de Arboris para proteger a sus habitantes de la secta.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Academia Myrelith</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 900 · mes 10</span><br><span style="color:var(--ink-dim);">Un grupo de estudiantes de Myrelith pasa un día de entrenamiento en la academia local, aspirando a ser héroes de Luxor algún día.</span></li>
+        <li style="color:var(--ink);">— <strong><a href="#torneo-emperadores" style="color:var(--gold-soft);text-decoration:none;">Torneo de los Dos Emperadores ↓</a></strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1012 · mes 1</span><br><span style="color:var(--ink-dim);">La conclusión de los héroes de Apexora: Umbra organiza otro Skaldrak Vlarim, esta vez en territorio de Skaldrum, bajo la mirada del emperador Oci (semidiós, hijo de Ape) y en complicidad con Puj, emperador de Umbra.</span><details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--gold-soft);">Los 32 participantes</summary><p style="color:var(--ink-dim);margin-top:.4rem;">Astra, Axeraide, Azalange, Bane, Beo, Criatura, Dorianus, Joshua, Julio Balteus, Kaelen, Karim, Kelshir, Laki, Lurim, Lynch, Nailis, Net, Nefri, Orion, Ova, Pin, Plumarquias, Rolac, Seah, Solara, Tatal, Tilimad, Vela, Voragos, Xuelen, Zarick y Zazap.</p></details></li>
+      </ul>
+    </div>
 
-    <p>En una jugada arriesgada, Andreas decidió enviar al recluta a su muerte. Le hizo decir por el comunicador que tenía información relevante sobre la guarida del líder, y algo que "no les iba a gustar" — para que, poco después, Rose recibiera un mensaje privado avisando de un posible traidor en la orden y sugiriéndole reunirse en una ubicación apartada para mantener todo en secreto. Le ordenó al novato ir, mientras él lo acompañaba desde las sombras, y presenció cómo Rose acababa con su vida.</p>
+    <div class="panel">
+      <p class="eyebrow">Campaña 2</p>
+      <h3 style="margin-top:0.4rem;">Sinfalía</h3>
+      <p style="color:var(--ink-dim);margin-top:0.6rem;"><em>La Armonía de los que Saludan.</em> Una etapa distinta: la narrativa se desplaza hacia las regiones orientales y presenta un elenco nuevo.</p>
+      <ul class="upcoming-chapters" style="grid-template-columns:1fr;margin-top:1rem;color:var(--ink);">
+        <li style="color:var(--ink);">— <strong>Vasané-Nalú</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1012 · mes 8</span><br><span style="color:var(--ink-dim);">Valmey envía una carta pidiendo ayuda a antiguos conocidos: Seila, Gobz (con su armadura Bason y su perro Rocky) y Lael (con su yegua). Juntos deben resolver un misterio en el lejano pueblo sinfaliense de Vasané-Nalú. Primero se reúnen en Malina, donde los informa la guerrera Volmí. Al llegar encuentran un lugar destruido y lleno de miedo; ayudan a un aldeano, pero el sitio resulta estar plagado de chacales cambiaformas. Ver también <a href="#juicio-inasuno" style="color:var(--gold-soft);">«El Juicio de Inasuno»</a> ↓ y «La invasión de Vasané-Nalú» en <a href="linea-tiempo.html" style="color:var(--gold-soft);">Cronología</a>.</span></li>
+        <li style="padding-left:1.5rem;color:var(--ink-faint);">* <strong>Bahía Lunar</strong> <span style="color:var(--ink-faint);font-size:.9em;">· año 1012 · mes 7</span><br><span style="color:var(--ink-dim);">Antes de Vasané-Nalú, Vina Miceus y su grupo exploran un misterio en Bahía Lunar, al sur del continente del este, donde se perdió un estudiante. El grupo se divide en tres: Vina y Bane van al centro del pueblo, y otro grupo recorre el bosque, formado por Augusto (cartógrafo), Jorven (soldado), Mansekino (marinero) y Vinko (sacerdote).</span></li>
+      </ul>
+    </div>
 
-    <p>Su capacidad de percepción no fue suficiente para detectar a Andreas. La noqueó, la llevó a un lugar alejado y privado para interrogarla, y ella le habló de cómo el Consejo les ocultaba cosas y los obligaba a matar inocentes "por el bien de Luxor" — un bien tergiversado a conveniencia de sus propios integrantes. Al final, acabó con su vida.</p>
+    <div class="panel" id="campamento-sopharum" style="margin-top:1.75rem;">
+      <p class="eyebrow">Obra escrita</p>
+      <h3 style="margin-top:0.4rem;">Campamento Sopharum</h3>
+      <p style="color:var(--ink-dim);margin-top:0.6rem;">Un líder sospecha del entorno de su ciudad y decide formar un equipo de guerreros únicos.</p>
+      <p style="color:var(--ink-dim);margin-top:0.75rem;">Sus primeros capítulos forman parte del lore oficial del mundo. El más reciente, <strong>“Campamento, familia”</strong>, se publicó el 23 de septiembre de 2026 y refuerza la idea que atraviesa a todo el grupo: una familia que se va formando de a poco.</p>
+    </div>
 
-    <p>Solo, se infiltró disfrazado como el líder terrorista en una de sus reuniones. Eliminó a unos cuantos, pero no tardaron en descubrirlo: un grupo de 34 personas lo rodeó, confiados en que un espía sin coartada no era una gran amenaza. Se equivocaron. Ese mismo día, 34 personas murieron — no por algún motivo en especial; de hecho, eran más valiosas como sujetos de interrogación, pero había un sentimiento del que Andreas necesitaba distraerse.</p>
-
-    <p>Al finalizar la misión, le ofrecieron el primer asiento del tercer círculo — el asiento de Rose. Lo rechazó, argumentando que no era digno de tal honor. Desde entonces, cada vez que tiene tiempo para pensar, lo invade el mismo sentimiento de aquella vez.</p>
-
-    <p style="color:var(--ink-dim);"><em>Hoy, Andreas lleva a cabo la Operación Negro bajo la identidad de León Skyrider — ver su ficha en <a href="personajes.html#personaje-andreas" style="color:var(--gold-soft);">Personajes</a> y la estructura de la Orden en <a href="mundo.html#orden-ocl" style="color:var(--gold-soft);">Mundo</a>.</em></p>
+    <div class="panel" id="torneo-emperadores" style="margin-top:1.75rem;">
+      <p class="eyebrow">Recta final · Guardianes de Apexora</p>
+      <h3 style="margin-top:0.4rem;">El Torneo de los Dos Emperadores (TSV)</h3>
+      <ul class="upcoming-chapters" style="grid-template-columns:1fr;margin-top:1rem;color:var(--ink);">
+        <li>— Es el último hecho de la campaña de los Guardianes de Apexora, después de unos dos años de juego.</li>
+        <li>— Es el torneo Skaldrak Vlarim (TSV), y esta vez se celebra en Skaldrum.</li>
+        <li>— Lo presiden dos emperadores: Puj, de Umbra, y Oci, de Skaldrum.</li>
+        <li>— Compiten 27 participantes nuevos, tres por nación: 32 contando a los protagonistas.</li>
+        <li>— Termina con la lucha contra Puj y la encarnación de Ape, y con la muerte de Karim.</li>
+      </ul>
+    </div>
   </div>
 </section>
-
-<hr class="divider">
 
 </main>
 
@@ -477,12 +551,23 @@
       <li>Mitología ✓</li>
       <li>Mundo ✓</li>
       <li>Personajes ✓</li>
+      <li>Escritos ✓</li>
       <li>Capítulos IV–XI — por venir</li>
     </ul>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var ids=["linaje-zarick", "destinos", "guardianes-1", "guardianes-2", "guardianes-3", "vision-psybernia", "epilogo-torneo", "sombras-luz", "juicio-inasuno", "karim-extenso"],b=document.getElementById("story-random");
+  if(!b)return;
+  b.addEventListener("click",function(){
+    var id=ids[Math.floor(Math.random()*ids.length)],el=document.getElementById(id);
+    if(el){el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});history.replaceState(null,"","#"+id);}
+  });
+})();
+</script>
 <script type="module" src="js/apexora.js"></script>
 <script src="js/search-data.js"></script>
 <script src="js/search.js"></script>
